@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Viettel Number</title>
+</head>
+<body>
+<script>
+    function checkNumber(str) {
+        regExp = /^[0]([9]{1}[678]{1})([8]{1}[6]{1})([3]{1}[2-9]{1})[0-9]{7}$/;
+        if (regExp.test(str)) {
+            alert(str+' là số điện thoại của Viettel');
+        } else {
+            alert(str+' không phải là số điện thoại của Viettel');
+        }
+    }
+    let a = '0374686525';
+    checkNumber(a);
+</script>
+</body>
+</html>
